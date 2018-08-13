@@ -12,7 +12,8 @@ def trigger(words):
             return True
     return False
 
-ans = ['Sleep well labmem! :okabeSip:', 'Goodnight! :okabeSip:', 'Gn! :okabeSip:', 'See you tomorrow! :okabeSip:']
+ans = ['Sleep well labmem! <:okabeSip:473365260443582464>', 'Goodnight! <:okabeSip:473365260443582464>',
+       'Gn! <:okabeSip:473365260443582464>', 'See you tomorrow! <:okabeSip:473365260443582464>']
 
 def out(words):
     ret = ''

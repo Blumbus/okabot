@@ -100,7 +100,9 @@ async def on_message(message):
         elif test_content == 'daga':
             await client.send_message(message.channel, 'Kotowaru!')
         elif gnight.trigger(words):
-            await client.send_message(message.channel, gnight.out(words))
+            out = gnight.out(words)
+            if out != '':
+                await client.send_message(message.channel, out)
 
 
 
