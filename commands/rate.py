@@ -33,13 +33,4 @@ def out(words):
         ret = '**' + words[0].display_name + '**... I give them ' + aan + ' ' + str(val) + '/10' + punc
     else:
         ret = 'I give it ' + aan + '... ' + str(val) + '/10' + punc
-    if 'ass' in st or 'butt' in st:
-        if val > 9:
-            ret += '\nPerfect! Round! Huge!'
-        elif val > 5:
-            ret += '\nPlump as a peach!'
-        elif val > 2:
-            ret += '\nI\'d still take it.'
-        else:
-            ret += '\nFlat...'
     return ret

@@ -93,6 +93,14 @@ async def on_message(message):
             await client.send_message(message.channel, 'Good Alpacaman.')
         elif 'bad bot' in test_content:
             await client.send_message(message.channel, 'Bad Alpacaman.')
+        elif 'el' in test_content and 'psy' in test_content and 'kongroo' not in test_content:
+            await client.send_message(message.channel, 'Kongroo!')
+        elif test_content == 'el':
+            await client.send_message(message.channel, 'Psy')
+        elif test_content == 'nurupo' or test_content == 'nullpo':
+            await client.send_message(message.channel, 'Ga!')
+        elif test_content == 'daga':
+            await client.send_message(message.channel, 'Kotowaru!')
 
 
 def stringify_words(words):

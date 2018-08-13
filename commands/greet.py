@@ -1,12 +1,12 @@
 import random
 
-grs = ['Welcome, %USER%, watch your step', 'Hey there, %USER%', 'Nice to see you, %USER%',
-       '%USER%, do I know you?', 'Ah, welcome home, %USER%', 'Smells like %USER% got here safe and sound',
-       'I have never smelled anything like you before, %USER&', 'This smell... %USER%... it\'s the scent of a loser',
-'Did you take a shower today, %USER%?', 'Did you bring your pride, %USER%?']
+grs = ['Welcome labmem 00%NUM%, %USER%!', 'Welcome to the Future Gadget Laboratory, %USER%',
+       '%USER%... I see you\'ve arrived', 'Welcome, assistant of mine, %USER%!',
+       'You\'ve arrived in the delta worldline, %USER%', 'Welcome %USER%, or should I say *Za Zombie*']
 
 
 def out(id):
     g = random.choice(grs)
     g = g.replace('%USER%', '<@' + id + '>')
+    g = g.replace('%NUM', str(random.randrange(1, 9)))
     return g
