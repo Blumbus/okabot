@@ -62,9 +62,7 @@ async def on_message(message):
         words = new_words
 
         if command_perms(message, words[0]):
-            if words[0] == 'pickup' or words[0] == 'flirt':
-                await client.send_message(message.channel, pickup.out(stringify_words(words)))
-            elif words[0] == 'ship':
+            if words[0] == 'ship':
                 if len(words) < 2:
                     await client.send_message(message.channel, 'Please specify at least one thing to ship.')
                 else:
@@ -101,6 +99,9 @@ async def on_message(message):
             await client.send_message(message.channel, 'Ga!')
         elif test_content == 'daga':
             await client.send_message(message.channel, 'Kotowaru!')
+        elif gnight.trigger(words):
+            await client.send_message(message.channel, gnight.out(words))
+
 
 
 def stringify_words(words):
@@ -131,6 +132,6 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
-    await  client.change_presence(game=discord.Game(name='with world lines'))
+    await  client.change_presence(game=discord.Game(name='with worldlines'))
 
 client.run(token)

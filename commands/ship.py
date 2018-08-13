@@ -19,15 +19,15 @@ def out(thing1, thing2):
     val = round(r)
     ret = '**' + str(disp1) + '** and **' + str(disp2) + '**... a ' + str(val) + '% ship rate!\n'
     if val > 95:
-        ret += 'These two are perfect, absolutely perfect!'
+        ret += 'A love that transcends time and space! They\'re perfect!'
     elif val > 80:
-        ret += random.choice(['An inseparable pair! Papa would be proud.', '(whistles)'])
+        ret += random.choice(['These numbers! This must be the will of Steins Gate', 'A pair as good as Kurisu and DkPepper!'])
     elif val > 60:
-        ret += random.choice(['Impressive... these two make a great duo.', 'My my, these two are something special.'])
+        ret += random.choice(['Impressive... perhaps these two have met before somewhere'])
     elif val > 40:
-        ret += random.choice(['Could be better.', 'The synergy could use some work.', 'More effort into it might help.'])
+        ret += random.choice(['Not bad, I\'m sure they could bond over omurice and catgirls', 'Maybe they have a promising future... but I won\'t tell! Fwuuhahaha!'])
     elif val > 20:
-        ret += random.choice(['Low... as expected of humans.', 'Hardly a spark.'])
+        ret += random.choice(['Doesn\'t look so good... perhaps we can change that', 'Maybe Daru can give them some daring tips...'])
     else:
-        ret += random.choice(['There\'s no connection here at all... disgusting.', 'You\'d have better results paired with a rock.'])
+        ret += random.choice(['Ouch...', 'Even a time leap can\'t fix this'])
     return ret

@@ -8,5 +8,5 @@ grs = ['Welcome labmem 00%NUM%, %USER%!', 'Welcome to the Future Gadget Laborato
 def out(id):
     g = random.choice(grs)
     g = g.replace('%USER%', '<@' + id + '>')
-    g = g.replace('%NUM', str(random.randrange(1, 9)))
+    g = g.replace('%NUM%', str(random.randrange(1, 9)))
     return g
